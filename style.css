@@ -57,7 +57,7 @@ body{
     color: white;
     margin: 0px;
 }
-#texto_primeira_parte a{
+#texto_primeira_parte button{
     background-color: #f6b800;
     text-decoration: none;
     color: black;
