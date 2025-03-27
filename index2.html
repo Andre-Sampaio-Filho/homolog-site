@@ -1,2 +1,17 @@
 <h1>teste</h1>
 <button onclick="window.location.href='index.html'">Voltar</button>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const tokenRecebido = urlParams.get("token");
+    const tokenSalvo = localStorage.getItem("avaliacaoToken");
+
+    if (!tokenRecebido || tokenRecebido !== tokenSalvo) {
+        alert("Token inválido ou já utilizado!");
+        window.location.href = "index.html"; // Redireciona para a página inicial
+    } else {
+        localStorage.removeItem("avaliacaoToken"); // Invalida o token após o uso
+    }
+});
+</script>
