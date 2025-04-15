@@ -2,6 +2,9 @@ body{
     margin: 0px;
     padding: 0px;
 }
+#gerarToken:hover{
+    cursor: pointer;
+}
 #primeira_parte{
     height: 740px;
     background-image: url("imagens/fundo_primeira_parte.png");
